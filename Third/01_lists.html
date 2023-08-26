@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+
+    <style>
+
+        ul.a {
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+        }
+
+        ol.c {
+            list-style-type: upper-roman;
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+
+        /* list-style-image property specifies an image as the list item marker */
+
+        ul.e {
+            list-style-image: url(/HTML/Images/pic_bulbon.gif);
+        }
+
+        /* list-style-position property specifies the position of the list-item markers (bullet points). */
+
+        ul.f {
+            list-style-position: outside;
+        }
+        ul.g {
+            list-style-position: inside;
+        }
+
+        /* Remove Default Settings */
+
+        /* list-style-type:none property can also be used to remove the markers/bullets.
+        Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 */
+
+        ul.h {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* list-style property is a shorthand property. It is used to set all the list properties in one declaration: */
+
+        ul.i {
+            list-style: lower-roman inside; /* order : type => position => image */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>The list-style-type Property</h2>
+    
+    <p>Example of Unordered lists:</p>
+
+    <ul class="a">
+        <li>Mobile</li>
+        <li>Laptop</li>
+        <li>Airpods</li>
+        <li>Charger</li>
+    </ul>
+
+    <ul class="b">
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+    </ul>
+
+    <p>Example of Ordered lists:</p>
+
+    <ol class="c">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScipt</li>
+        <li>PHP</li>
+    </ol>
+
+    <ol class="d">
+        <li>Bicycle</li>
+        <li>Bike</li>
+        <li>Car</li>
+        <li>Truck</li>
+    </ol>
+
+    <ul class="e">
+        <li>Bugatti</li>
+        <li>Mercedes</li>
+        <li>BMW</li>
+        <li>Ferari</li>
+        <li>Lamborghini</li>
+    </ul>
+    <hr style="border: 1px solid black;">
+
+    <ul class="f">
+        <li>Science</li>
+        <li>Commerce</li>
+        <li>Arts</li>
+    </ul>
+
+    <ul class="g">
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Maths</li>
+    </ul>
+
+    <hr style="border: 1px solid black;">
+
+    <h2>Remove Default List Settings</h2>
+
+    <ul class="h">
+        <li>Canada</li>
+        <li>Germany</li>
+        <li>United Kingdom</li>
+        <li>Australia</li>
+        <li>France</li>
+    </ul>
+
+    <h2>List - Shorthand Property</h2>
+
+    <ul class="i">
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Chinese</li>
+        <li>Gujarati</li>
+    </ul>
+    
+</body>
+</html>

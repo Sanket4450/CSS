@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation bar</title>
+
+    <style>
+
+        /* There are two ways to create a horizontal navigation bar. Using inline or floating list items. */
+
+        /* display: inline; - By default, <li> elements are block elements. Here, we remove the
+        line breaks before and after each list item, to display them on one line */
+
+        /* Another way of creating a horizontal navigation bar is to float the <li> elements,
+        and specify a layout for the navigation links */
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #3b3b3b;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid white;
+        }
+
+        li a {
+            display: block;
+            padding: 14px 18px;
+            color: white;
+            text-decoration: none;
+            font-size: 120%;
+        }
+
+        li a:hover {
+            background-color: rgb(20, 20, 20);
+        }
+
+        li a.active {
+            background-color: rgb(10, 149, 86);
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rate">Rate</a></li>
+        <li><a href="#share">Share</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float: right;"><a href="#about" class="active">About</a></li>
+    </ul>
+    
+</body>
+</html>

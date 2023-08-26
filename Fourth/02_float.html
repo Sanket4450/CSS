@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Property</title>
+
+    <style>
+
+        /* clear property specifies what should happen with the element that is next to a floating element. */
+
+        /* without clear property */
+
+        .div1 {
+            float: left;
+            padding: 15px;
+            font-size: 150%;
+            border: 6px solid rgb(255, 102, 0);
+        }
+        .div2 {
+            padding: 15px;
+            font-size: 150%;
+            border: 6px solid blue;
+        }
+
+        /* with clear property */
+
+        .div3 {
+            float: left;
+            padding: 15px;
+            font-size: 150%;
+            border: 6px solid rgb(255, 102, 0);
+        }
+        .div4 {
+            clear: left;
+            padding: 15px;
+            font-size: 150%;
+            border: 6px solid blue;
+        }
+
+        /* If a floated element is taller than the containing element, it will "overflow" outside of
+        its container. We can then add a clearfix hack to solve this problem */
+
+        div {border: 10px solid black; padding: 15px; font-size: 150%;}
+
+        .img1 {float: right;}
+
+        .img2 {float: right;}
+
+        .clearfix {
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>➜ Without Clear</h2>
+
+    <div class="div1">India</div>
+    <div class="div2">India got independence in year 1947 from britishers but there wasn't written any
+        constitution yet. So, the official constitution had been written by Dr. Babasaheb Ambedkar.
+    </div>
+
+    <h2>➜ With Clear</h2>
+    
+    <div class="div3">India</div>
+    <div class="div4">India got independence in year 1947 from britishers but there wasn't written any
+        constitution yet. So, the official constitution had been written by Dr. Babasaheb Ambedkar.
+    </div>
+
+    <h2>➜ Without Clearfix</h2>
+
+    <div>
+        <img class="img1" src="/HTML/Images/IMG_1.jpg" alt="Sanket Talaviya" width="220" height="350">
+        I am Sanket Talaviya and Now, I am learning Clearfix in CSS, As you can see, this image is taller
+        than the text.
+    </div>
+
+    <h2 style="clear: right;">➜ With Clearfix</h2>
+
+    <div class="clearfix">
+        <img class="img2" src="/HTML/Images/IMG_1.jpg" alt="Sanket Talaviya" width="220" height="350">
+        I am Sanket Talaviya and Now, I am learning Clearfix in CSS, As you can see, this image is taller
+        than the text.
+    </div>
+    
+</body>
+</html>

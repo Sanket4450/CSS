@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+
+    <style>
+
+        /* color property is used to set the color of the text. */
+
+        .s1 {color: crimson;}
+        .s2 {color: rgb(25, 92, 72);}
+        .s3 {color: hsl(116, 89%, 59%);}
+        .s4 {color: rgba(152, 31, 52, 0.8);}
+        .s5 {color: hsl(231, 100%, 51%);}
+        .s6 {color: blueviolet;}
+        .s7 {color: rgb(171, 255, 44);}
+        .s8 {color: rgb(104, 27, 103);}
+        .s9 {color: lightsalmon;}
+        .s10 {color: #e7ff7e;}
+
+        /* we define both the background-color property and the color property */
+
+        .s1 {background-color: aquamarine;}
+        .s2 {background-color: blanchedalmond;}
+        .s3 {background-color: rgb(20, 120, 120);}
+        .s4 {background-color: hsl(70, 100%, 40%);}
+        .s5 {background-color: salmon;}
+        .s6 {background-color: lightgreen;}
+        .s7 {background-color: rgba(197, 31, 139, 0.7);}
+        .s8 {background-color: hsla(210, 60%, 50%, 0.6);}
+        .s9 {background-color: dimgray;}
+        .s10 {background-color: #458cf3;}
+
+        /* text-align property is used to set the horizontal alignment of a text. */
+
+        .s1 {text-align: left;}
+        .s2 {text-align: center;}
+        .s3 {text-align: right;}
+        .s4 {text-align: justify;}
+
+        /* text-align-last property specifies how to align the last line of a text. */
+
+        .s1 {text-align-last: right;}
+        .s2 {text-align-last: center;}
+        .s3 {text-align-last: left;}
+        .s4 {text-align-last: justify;}
+
+        /* direction and unicode-bidi properties can be used to change the text direction of an element */
+
+        .s1 {direction: ltr;}
+        .s2 {direction: rtl;}
+        .s3 {direction: unset;}
+
+        /* text-decoration-line property is used to add a decoration line to text. */
+
+        .s1 {text-decoration-line: overline;}
+        .s2 {text-decoration-line: line-through;}
+        .s3 {text-decoration-line: underline;}
+        .s4 {text-decoration-line: overline underline;}
+
+        /* text-decoration-color property is used to set the color of the decoration line. */
+
+        .s1 {text-decoration-color: rgb(0, 107, 84);}
+        .s2 {text-decoration-color: rgb(173, 12, 12);}
+        .s3 {text-decoration-color: hsl(286, 100%, 31%);}
+        .s4 {text-decoration-color: #2200ff;}
+
+        /* text-decoration-style property is used to set the style of the decoration line. */
+
+        .s1 {text-decoration-style: solid;}
+        .s2 {text-decoration-style: dotted;}
+        .s3 {text-decoration-style: dashed;}
+        .s4 {text-decoration-style: double;}
+
+        /* text-decoration-thickness property is used to set the thickness of the decoration line. */
+
+        .s1 {text-decoration-thickness: 30%;}
+        .s2 {text-decoration-thickness: 3px;}
+        .s3 {text-decoration-thickness: 5px;}
+        .s4 {text-decoration-thickness: 3px;}
+
+        /* text-decoration property is a shorthand property */
+
+        .s5 {text-decoration: 5px underline dotted green;}
+
+        /* text-transform property is used to specify uppercase and lowercase letters in a text. */
+
+        .s6 {text-transform: lowercase;}
+        .s7 {text-transform: uppercase;}
+        .s8 {text-transform: capitalize;}
+
+        /* text-indent property is used to specify the indentation (paragraph) of the first line of a text */
+
+        .s9 {text-indent: 50px;}
+        .s10 {text-indent: 100px;}
+
+        /* letter-spacing property is used to specify the space between the characters in a text. */
+
+        .s6 {letter-spacing: 4px;}
+        .s7 {letter-spacing: 8px;}
+
+        /* line-height property is used to specify the space between lines */
+
+        .s6 {line-height: 10px;}
+        .s7 {line-height: 40px;}
+
+        /* word-spacing property is used to specify the space between the words in a text. */
+
+        .s8 {word-spacing: 10px;}
+        .s9 {word-spacing: 25px;}
+
+        /* white-space property specifies how white-space inside an element is handled. */
+
+        .s10 {white-space:nowrap;}
+
+        /* text-shadow property adds shadow to text. */
+
+        .s5 {text-shadow: 1.5px 1.5px;} /* horizontal, vertical */
+        .s6 {text-shadow: 2px 2px red;} /* horizontal, vertical */
+        .s7 {text-shadow: 3px 3px 5px blue;} /* horizontal, vertical, blur effect */
+        .s8 {text-shadow: 0px 0px 6px salmon;} /* horizontal, vertical, blur effect */
+        .s9 {text-shadow: 0 0 3px darkorange, 0 0 5px magenta;} /* mixed shadow with two colors */
+        .s10 {text-shadow: 2px 2px black, 0 0 3px darkred, 0 0 6px red;} /* mixed shadow with three colors */
+
+    </style>
+</head>
+<body>
+
+    <p class="s1">Thales of Miletus was an Ancient Greek pre-Socratic philosopher from Miletus in Ionia, Asia Minor. Thales was one of the
+    Seven Sages, founding figures of Ancient Greece, and credited with the saying "know thyself" which was inscribed on the
+    Temple of Apollo at Delphi.</p>
+
+    <p class="s2">Pythagoras of Samos was an ancient Ionian Greek philosopher and the eponymous founder of Pythagoreanism. His political
+    and religious teachings were well known in Magna Graecia and influenced the philosophies of Plato, Aristotle, and,
+    through them, the West in general.</p>
+
+    <p class="s3">Siddhartha Gautama, most commonly referred to as the Buddha, was a wandering ascetic and religious teacher who lived in
+    South Asia during the 6th or 5th century BCE and founded Buddhism.</p>
+
+    <p class="s4">Socrates was a Greek philosopher from Athens who is credited as the founder of Western philosophy and among the first
+    moral philosophers of the ethical tradition of thought.</p>
+
+    <p class="s5">Plato was an ancient Greek philosopher born in Athens during the Classical period in Ancient Greece. In Athens, Plato
+    founded the Academy, a philosophical school where he taught the philosophical doctrines that would later become known as
+    Platonism.</p>
+
+    <p class="s6">Aristotle was an Ancient Greek philosopher and polymath. His writings cover a broad range of subjects spanning the
+    natural sciences, philosophy, linguistics, economics, politics, psychology and the arts.</p>
+
+    <p class="s7">Hippocrates of Kos, also known as Hippocrates II, was a Greek physician of the classical period who is considered one of
+    the most outstanding figures in the history of medicine.</p>
+
+    <p class="s8">Epicurus was an ancient Greek philosopher and sage who founded Epicureanism, a highly influential school of philosophy.
+    He was born on the Greek island of Samos to Athenian parents.</p>
+
+    <p class="s9">Confucius was a Chinese philosopher and politician of the Spring and Autumn period who is traditionally considered the
+    paragon of Chinese sages. Confucius's teachings and philosophy underpin East Asian culture and society, remaining
+    influential across China and East Asia to this day.</p>
+
+    <p class="s10">Laozi, also romanized as Lao Tzu and various other ways, was a semi-legendary ancient Chinese Taoist philosopher,
+    credited with writing the Tao Te Ching. Laozi is a Chinese honorific, generally translated as "the Old Master".</p>
+    
+</body>
+</html>

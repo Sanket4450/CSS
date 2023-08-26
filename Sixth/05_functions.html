@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+    <style>
+
+        /* CSS math functions allow mathematical expressions to be used as property values. Here, we will
+        explain the calc(), max() and min() functions. */
+
+        /* calc() function performs a calculation to be used as the property value. */
+
+        #div1 {
+            width: calc(100% - 100px);
+            border: 1px solid black;
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        /* max() function uses the largest value, from a comma-separated list of values, as the property value. */
+
+        #div2 {
+            background-color: yellow;
+            height: 100px;
+            width: max(50%, 500px); /* the largest value is chosen from the comma-separated list */
+        }
+
+        /* min() function uses the smallest value, from a comma-separated list of values, as the property value. */
+
+        #div3 {
+            background-color: yellow;
+            height: 100px;
+            width: min(50%, 400px); /* the smallest value is chosen from the comma-separated list */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>The calc() Function</h1>
+
+    <div id="div1">Some text...</div>
+
+    <h1>The max() Function</h1>
+
+    <div id="div2">Some text...</div>
+
+    <h1>The min() Function</h1>
+
+    <div id="div3">Some text...</div>
+    
+</body>
+</html>

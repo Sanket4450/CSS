@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <style>
+
+        /* A pseudo-class is used to define a special state of an element. */
+
+        a.link:link {background-color: red;}
+        a.link:visited {background-color: green;}
+        a.link:hover {background-color: blue;}
+        a.link:active {background-color: salmon;}
+
+        /* simple tooltip hover */
+
+        .tooltip1 {
+            display: none;
+            background-color: rgb(188, 255, 234);
+            border: 4px solid rgb(0, 162, 111);
+            padding: 10px;
+        }
+
+        .tooltip:hover p {
+            display: block;
+        }
+
+        /* The :first-child pseudo-class matches a specified element that is the first child of another element. */
+
+        p:first-child {background-color: salmon;} /* must be immediately after an element starts */
+
+        p i:first-child { /* style all first 'i's of all 'p's */
+            background-color: lightgreen;
+        }
+
+        p:first-child i {
+            background-color: lightskyblue; /* style all 'i's of all first 'p's of an element */
+        } 
+
+    </style>
+</head>
+<body>
+
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+    <p>U.A.E.</p>
+    <p>Canada</p>
+
+    <h2>Styling a link depending on state</h2>
+
+    <p>Switzerland</p>
+    <p>Russia</p>
+
+    <p><a class="link" href="https://www.amazon.in/" target="_blank" style="color: white;">Amazon</a></p>
+
+    <h2>Simple tooltip hover</h2>
+
+    <div class="tooltip">Thanos!
+        <p class="tooltip1">I am Inevitable</p>
+    </div>
+
+    <div>
+        <p>India</p>
+        <p>Australia</p>
+        <p>Pakistan</p>
+    </div>
+
+    <section>
+        <p>U.S.A.</p>
+        <p>U.K.</p>
+    </section>
+
+    <i>
+        <p>Japan</p>
+        <p>China</p>
+    </i>
+
+    <p>Germany</p>
+    
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+    <div>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation Bar</title>
+
+    <style>
+
+        /* navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense */
+
+        /* list-style-type: none; - Removes the bullets. A navigation bar does not need list markers */
+        /* Set margin: 0; and padding: 0; to remove browser default settings */
+
+        /* display: block; - Displaying the links as block elements makes the whole link area clickable(not
+        just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want) */
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            position: fixed;
+            height: 100%;
+            background-color: #f1f1f1;
+            border: 1px solid black;
+            text-align: center;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-bottom: 1px solid black;
+        }
+
+        /* Change the link color on hover */
+        
+        li a:hover {
+            background-color: rgb(70, 70, 70);
+            color: white;
+        }  /* If we write hover after active then the active nav can also be hovered */
+
+        li a.active {
+            background-color: rgb(0, 151, 78);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#rate">Rate</a></li>
+        <li><a href="#share">Share</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div style="margin-left: 16%; padding: 1px 10px;">
+
+        <h1>Fixed Full-height Side Nav</h1>
+        <h2>Try to scroll this area, and see how the sidenav sticks to the page</h2>
+
+        <p style="font-size: 150%;">Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If
+            you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p style="font-size: 150%;">Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for
+            example if it has over 50 links inside of it).</p>
+
+        <pre style="font-family: 'Courier New', Courier, monospace; font-size: 150%;">
+            Twinkle twinkle little star.
+            How I wonder what you are.
+            Up above the world so high.
+            Like a diamond in the sky.
+            Twinkle twinkle little star.
+            How I wonder what you are.
+            
+            Twinkle twinkle little star.
+            How I wonder what you are.
+            Up above the world so high.
+            Like a diamond in the sky.
+            Twinkle twinkle little star.
+            How I wonder what you are.
+        </pre>
+
+    </div>
+    
+</body>
+</html>

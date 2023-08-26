@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+
+    <style>
+
+        /* border-style property specifies what kind of border to display. */
+
+        /* border-width property can have from one to four values (for the top border, right border, bottom border, and the left border) */
+
+        /* border-color property is used to set the color of the four borders. */
+
+        h2.dotted {border-style: dotted; border-width: 10px; border-color: darkred;}
+        h2.dashed {border-style: dashed; border-width: 15px; border-color: darkblue darkmagenta;}
+        h2.solid {border-style: solid; border-width: 20px 50px; border-color: blueviolet deeppink darkgreen;}
+        h2.double {border-style: double; border-width: 50px 120px 10px 25px; border-color: brown blue darkgreen darkmagenta;}
+        h2.groove {border-style: groove; border-width: 15px;}
+        h2.ridge {border-style: ridge; border-width: 15px;}
+        h2.inset {border-style: inset; border-width: 15px;}
+        h2.outset {border-style: outset; border-width: 15px;}
+        h2.none {border-style: none; border-width: 15px;}
+        h2.hidden {border-style: hidden; border-width: 15px;}
+        h2.mix {border-style: dashed dotted solid double; border-width: 15px;}
+
+        /* border property is a shorthand property for the following individual border properties */
+        /* order - width, style, color */
+
+        /* Full Border */
+        h1.full {border: 15px solid darkred;}
+
+        /* Top Border */
+        h1.top {border-top: 15px groove red;}
+
+        /* Right Border */
+        h1.right {border-right: 15px dotted green;}
+
+        /* Bottom Border */
+        h1.bottom {border-bottom: 15px inset salmon;}
+
+        /* Left Border */
+        h1.left {border-left: 15px outset magenta;}
+
+        /* border-radius property is used to add rounded borders to an element */
+
+        .a1 {border: 5px dotted green; border-radius: 0px;}
+        .a2 {border: 5px dashed darkturquoise; border-radius: 5px;}
+        .a3 {border: 5px inset salmon; border-radius: 10px;}
+        .a4 {border: 5px outset springgreen; border-radius: 15px;}
+
+    </style>
+</head>
+<body>
+
+    <!-- CSS border properties allow you to specify the style, width, and color of an element's border. -->
+
+    <h2 class="dotted">Rohit Sharma</h2>
+    <h2 class="dashed">Rohit Sharma</h2>
+    <h2 class="solid">Rohit Sharma</h2>
+    <h2 class="double">Rohit Sharma</h2>
+    <h2 class="groove">Rohit Sharma</h2>
+    <h2 class="ridge">Rohit Sharma</h2>
+    <h2 class="inset">Rohit Sharma</h2>
+    <h2 class="outset">Rohit Sharma</h2>
+    <h2 class="none">Rohit Sharma</h2>
+    <h2 class="hidden">Rohit Sharma</h2>
+    <h2 class="mix">Rohit Sharma</h2>
+
+    <h1 class="full">United Nationas</h1>
+    <h1 class="top">United States of America</h1>
+    <h1 class="right">United Kingdom</h1>
+    <h1 class="bottom">United Arab Emirates</h1>
+    <h1 class="left">New Zealand</h1>
+
+    <h2>Rounded Borders</h2>
+
+    <h3 class="a1">The Avengers</h3>
+    <h3 class="a2">Avengers: Age of Ultron</h3>
+    <h3 class="a3">Avengers: Infinity War</h3>
+    <h3 class="a4">Avengers: Endgame</h3>
+    
+</body>
+</html>

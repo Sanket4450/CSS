@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Add CSS</title>
+
+    <p>Second one is internal CSS</p>
+
+    <style>
+        h1 {background-color: salmon; text-align: center;}
+
+        /* This is a comment in CSS. */
+    </style>
+
+    <p>Third one is external CSS</p>
+
+    <link rel="stylesheet" href="03_style.css">
+
+    <!-- If the internal style is defined after the link to the external style sheet, internal style's priority will be first.
+    However, if the internal style is defined before the link to the external style sheet, external style's priority will be first. -->
+
+</head>
+<body>
+
+    <p>Three Ways to Insert CSS</p>
+
+    <p style="color: brown; font-size: 25px;">First one is inline CSS</p>
+
+    <h1>Rock, Paper, Scissor</h1>
+
+    <!-- Cascading Order -->
+
+    <!-- 1. Inline style (inside an HTML element)
+    2. External and internal style sheets (in the head section)
+    3. Browser default -->
+    
+</body>
+</html>

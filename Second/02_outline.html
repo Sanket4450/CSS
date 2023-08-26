@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+
+    <style>
+
+        p.dotted {outline-style: dotted;}
+        p.dashed {outline-style: dashed;}
+        p.solid {outline-style: solid;}
+        p.double {outline-style: double;}
+        p.groove {outline-style: groove;}
+        p.ridge {outline-style: ridge;}
+        p.inset {outline-style: inset;}
+        p.outset {outline-style: outset;}
+
+        p.ex1 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thin;
+        }
+
+        p.ex2 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: medium;
+        }
+
+        p.ex3 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thick;
+        }
+
+        p.ex4 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: 4px;
+        }
+
+        p.ex5 {
+            border: 2px solid black;
+            outline-style: solid;
+            outline-color: red;
+        }
+
+        p.ex6 {
+            border: 2px solid black;
+            outline-style: dotted;
+            outline-color: blue;
+        }
+
+        p.ex7 {
+            border: 2px solid black;
+            outline-style: outset;
+            outline-color: grey;
+        }
+
+        /* outline property is a shorthand property for setting the following individual outline properties */
+
+        .com1 {outline: 5px solid green;}
+        .com2 {outline: 8px dotted blue;}
+        .com3 {outline: 10px inset salmon;}
+        .com4 {outline: 10px outset salmon;}
+
+        /* outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent. */
+
+        .com5 {border: 5px solid palevioletred; outline: 5px solid lightseagreen; outline-offset: 5px; margin: 50px;}
+        .com6 {border: 8px solid deepskyblue; outline: 12px solid salmon; outline-offset: 10px; margin: 70px;}
+        .com7 {border: 14px solid green; outline: 8px solid darkred; outline-offset: 15px; margin: 70px;}
+
+    </style>
+</head>
+<body>
+
+    <!-- An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out". -->
+
+    <h2 style="margin: 25px;">The outline-style Property</h2>
+    
+    <p class="dotted">A dotted outline</p>
+    <p class="dashed">A dashed outline</p>
+    <p class="solid">A solid outline</p>
+    <p class="double">A double outline</p>
+    <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+    <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+    <h2 style="margin: 25px;">The outline-width Property</h2>
+    
+    <p class="ex1">A thin outline.</p>
+    <p class="ex2">A medium outline.</p>
+    <p class="ex3">A thick outline.</p>
+    <p class="ex4">A 4px thick outline.</p>
+
+    <h2>The outline-color Property</h2>
+    
+    <p class="ex5">A solid red outline.</p>
+    <p class="ex6">A dotted blue outline.</p>
+    <p class="ex7">An outset grey outline.</p>
+
+    <h2 style="margin: 25px;">The outline shorthand property</h2>
+
+    <h1 class="com1">Apple</h1>
+    <h1 class="com2">Microsoft</h1>
+    <h1 class="com3">Google</h1>
+    <h1 class="com4">Facebook</h1>
+
+    <h2 style="margin: 25px;">The outline-offset property</h2>
+
+    <h1 class="com5">Reliance Industries</h1>
+    <h1 class="com6">Tata Consultancy Servies</h1>
+    <h1 class="com7">HDFC Bank</h1>
+    
+</body>
+</html>

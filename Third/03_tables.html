@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+
+        /* To specify table borders in CSS, use the border property. */
+
+        table, th, td {border: 1px solid black;}
+
+        /* If you need a table that should span the entire screen (full-width), add width: 100% */
+
+        table {width: 100%;}
+
+        /* border-collapse property sets whether the table borders should be collapsed into a single border */
+
+        table {border-collapse: collapse;}
+
+        /* width and height of a table are defined by the width and height properties. */
+
+        table {width: 75%; height: 500px;} /* height must be in pxs */
+
+        /* To center-align the content of  <td> elements as well, use text-align: center */
+
+        td {text-align: center;}
+
+        /* vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>. */
+
+        td {vertical-align: bottom;}
+
+        /* To control the space between the border and the content in a table, use the padding property on <td> and <th> elements */
+
+        th, td {padding: 15px;}
+
+        /* border-bottom property to <th> and <td> for horizontal dividers */
+
+        th, td {border-bottom: 6px solid black;}
+
+        /* For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows */
+
+        tr:nth-child(even) {background-color: rgb(225, 225, 225);}
+
+        /* Use the :hover selector on <tr> to highlight table rows on mouse over */
+
+        tr:hover {background-color: lightsalmon;}
+
+        /* we can add background color & text color of a table */
+
+        th {background-color: rgb(0, 162, 84); color: white;}
+
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Style</th>
+            <th>Country</th>
+        </tr>
+
+        <tr>
+            <td>Virat</td>
+            <td>Kohli</td>
+            <td>Right-handed Batsman</td>
+            <td>India</td>
+        </tr>
+
+        <tr>
+            <td>David</td>
+            <td>Warner</td>
+            <td>Left-handed Batsman</td>
+            <td>Australia</td>
+        </tr>
+
+        <tr>
+            <td>Kane</td>
+            <td>Williamson</td>
+            <td>Right-handed Batsman</td>
+            <td>New Zealand</td>
+        </tr>
+
+        <tr>
+            <td>Joss</td>
+            <td>Buttler</td>
+            <td>Right-handed Batsman</td>
+            <td>England</td>
+        </tr>
+
+        <tr>
+            <td>Chris</td>
+            <td>Gayle</td>
+            <td>Left-handed Batsman</td>
+            <td>West Indies</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>

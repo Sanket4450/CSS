@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color</title>
+
+    <style>
+        /* background-color property specifies the background color of an element. */
+
+        body {background-color: salmon;}
+
+        h1 {background-color: aqua;}
+        p {background-color: lightskyblue;}
+
+        .good {
+            background-color: blanchedalmond; opacity: 0.4;
+        } /* In opacity, text will also be transparent */
+
+        .bad {
+            background-color: rgba(255, 235, 205, 0.4)
+        } /* In alpha(rgba), only background will be transparent, text will not be transparent */
+
+    </style>
+</head>
+<body>
+
+        <h1>Salmon Bhoi</h1>
+        <p>Really, Mere to apne gusse par full kaboo hai...</p>
+
+    <div class="good">
+        <h2>Oxford university</h2>
+        <h2>Harvard university</h2>
+        <h2>University of Pannysilvania</h2>
+    </div>
+
+    <div class="bad">
+        <h2>bhagwan Mahavir University</h2>
+        <h2>Ambaba Commerce College</h2>
+        <h2>S.S. Ghandhy College</h2>
+    </div>
+
+    <p>Result with opacity:</p>
+    
+    <div style="opacity:0.1; background-color: cyan;">
+        <h3>10% opacity</h3>
+    </div>
+    
+    <div style="opacity:0.3; background-color: cyan;">
+        <h3>30% opacity</h3>
+    </div>
+    
+    <div style="opacity:0.6; background-color: cyan;">
+        <h3>60% opacity</h3>
+    </div>
+    
+    <div style="background-color: cyan;">
+        <h3>opacity 1</h3>
+    </div>
+    
+    <p>Result with rgba():</p>
+    
+    <div style="background-color: rgba(255, 255, 0, 0.4);">
+        <h3>10% opacity</h3>
+    </div>
+    
+    <div style="background-color: rgba(255, 255, 0, 0.6);">
+        <h3>30% opacity</h3>
+    </div>
+    
+    <div style="background-color: rgba(255, 255, 0, 0.8);">
+        <h3>60% opacity</h3>
+    </div>
+    
+    <div style="background-color: rgba(255, 255, 0, 1);">
+        <h3>default</h3>
+    </div>
+    
+</body>
+</html>

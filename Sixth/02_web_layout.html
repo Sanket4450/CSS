@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .h1 {
+            color: rgb(0, 204, 255);
+            font-size: 135%;
+            position: relative;
+            left: 161px;
+            font-family: Verdana, Tahoma, sans-serif;
+            cursor: pointer;
+        }
+        .h2 {
+            color: rgb(0, 204, 255);
+            font-size: 300%;
+            position: relative;
+            top: 42px;
+            left: -45px;
+            font-family: Verdana, Tahoma, sans-serif;
+            cursor: pointer;
+        }
+
+        .nav {
+            float: right;
+            background-color: rgb(240, 240, 240);
+            margin-top: -28px;
+            margin-right: 20px;
+        }
+        .nav a {
+            display: inline-block;
+            color: black;
+            padding: 14px 18px;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+        .nav a:hover {
+            background-color: rgb(0, 204, 255);
+            color: white;
+        }
+        .nav a.active {
+            background-color: rgb(0, 204, 255);
+            color: white;
+        }
+
+        img {  /* we use postition absolute in image instead of relative */
+            position: absolute;
+            top: 120px;
+            right: 65px;
+        }
+
+        .simple {
+            color: purple;
+            font-size: 65px;
+            font-family: Verdana, Tahoma, sans-serif;
+            position: relative;
+            top: 55px;
+            left: 120px;
+        }
+        .simple1 {
+            position: relative;
+            top: 10px;
+            font-size: 138%;
+            left: 118px;
+        }
+
+        .row {
+            position: relative;
+            top: 130px;
+            margin: 20px;
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+            margin-top: -25px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        p.title {
+            font-size: 220%;
+            font-family: Verdana, Tahoma, sans-serif;
+            color: rgb(0, 204, 255);
+        }
+        p.des {
+            text-align: justify;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+        p.read {
+            text-align: right;
+            font-family: Verdana, Tahoma, sans-serif;
+            color: purple;
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+
+    </style>
+</head>
+<body style="background-color: rgb(235, 235, 235); margin: 0;">
+
+    <div>
+        <b class="h1">THINK</b>
+        <b class="h2">SIMPLE</b>
+    </div>
+
+    <div class="nav">
+        <a href="#" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <img src="https://images.macrumors.com/t/AI0UfpE0Io0I3yfew8TtFUxyi3s=/800x0/smart/article-new/2013/09/macbook-air-m2-roundup-header.png?lossy" alt="Laptop Image" width="420" height="265">
+
+    <p class="simple">Simple. Think.</p>
+    <p class="simple1">"The simple things are definitely the most important"</p>
+
+    <div class="row">
+
+        <div class="column">
+            <p class="title">About Us</p>
+            <p class="des">
+            We are an information technology company called SK infotech, currently working in website
+            as well as application development & also started in game development. We are at 12 branches
+            with one registered office in the whole state with more than 200 employees.
+            </p>
+            <p class="read">Read More</p>
+        </div>
+
+        <div class="column">
+            <p class="title">Services</p>
+            <p class="des">
+            We offers many services regarding to information technology like website development, native
+            and hybrid mobile application and also started providing services in game development. According
+            to our policy, We offers free services for 15 days from starting of all projects.
+            </p>
+            <p class="read">Read More</p>
+        </div>
+
+        <div class="column">
+            <p class="title">News</p>
+            <p class="des">
+            The company is running very well now. Last year, company had a total revenue of Rs. 14.65 Cr and
+            the profit was around 5.60 Cr. The official recruitment will be organized in June 2023, As per
+            company's policy we will hire the candidates as per their skills & performance.
+            </p>
+            <p class="read">Read More</p>
+        </div>
+
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+
+        /* With CSS, links can be styled in many different ways. */
+
+        /* unvisited link */
+        #amazon:link {
+            color: red;
+        }
+
+        /* visited link */
+        #amazon:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        #amazon:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        #amazon:active {
+            color: blue;
+        }
+
+        /* When setting the style for several link states, there are some order rules */
+
+        /* unvisited => visited => hover => active */
+
+        /* text decoration */
+
+        /* unvisited link */
+        #apple:link {
+            text-decoration: none;
+        }
+
+        /* visited link */
+        #apple:visited {
+            text-decoration: none;
+        }
+
+        /* mouse over link */
+        #apple:hover {
+            text-decoration: underline;
+        }
+
+        /* selected link */
+        #apple:active {
+            text-decoration: underline;
+        }
+
+        /* background color */
+
+        #microsoft:link {
+            background-color: lightcoral;
+        }
+
+        #microsoft:visited {
+            background-color: lawngreen;
+        }
+
+        #microsoft:hover {
+            background-color: skyblue;
+        }
+
+        #microsoft:active {
+            background-color: yellow;
+        }
+
+        /* link buttons */
+
+        #yt:link, #yt:visited {
+            background-color: red; color: white; padding: 10px 20px; text-align: center; text-decoration: none;
+        }
+        #yt:hover, #yt:active {
+            background-color: rgb(207, 0, 0); 
+        }
+
+        #cb:link, #cb:visited {
+            background-color: white; color: green; border: 2px solid green; padding: 12px 25px; text-align: center; text-decoration: none;
+        }
+        #cb:hover, #cb:active {
+            background-color: green; color: white;
+        }
+
+        span {
+            background-color: white; color: black; border: 2px dashed black; padding: 8px 15px; margin: 0px 15px; text-align: center;
+        }
+        div {background-color: antiquewhite;}
+
+    </style>
+</head>
+<body>
+
+    <p><a id="amazon" href="https://www.amazon.in/" target="_blank">Amazon</a></p>
+
+    <p><a id="apple" href="https://www.apple.com/in/" target="_blank">Apple</a></p>
+
+    <p><a id="microsoft" href="https://www.microsoft.com/en-in" target="_blank">Microsoft</a></p>
+
+    <br>
+
+    <p><a id="yt" href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+
+    <br>
+
+    <p><a id="cb" href="https://www.cricbuzz.com/" target="_blank">Cricbuzz</a></p>
+
+    <br>
+
+    <!-- different types of cursors (can be useful for links) -->
+
+    <h2>The cursor Property</h2>
+    
+    <p>Mouse over the words to change the cursor.</p>
+    <div><br>
+    <span style="cursor:auto">auto</span><br><br><br>
+    <span style="cursor:crosshair">crosshair</span><br><br><br>
+    <span style="cursor:default">default</span><br><br><br>
+    <span style="cursor:e-resize">e-resize</span><br><br><br>
+    <span style="cursor:help">help</span><br><br><br>
+    <span style="cursor:move">move</span><br><br><br>
+    <span style="cursor:n-resize">n-resize</span><br><br><br>
+    <span style="cursor:ne-resize">ne-resize</span><br><br><br>
+    <span style="cursor:nw-resize">nw-resize</span><br><br><br>
+    <span style="cursor:pointer">pointer</span><br><br><br>
+    <span style="cursor:progress">progress</span><br><br><br>
+    <span style="cursor:s-resize">s-resize</span><br><br><br>
+    <span style="cursor:se-resize">se-resize</span><br><br><br>
+    <span style="cursor:sw-resize">sw-resize</span><br><br><br>
+    <span style="cursor:text">text</span><br><br><br>
+    <span style="cursor:w-resize">w-resize</span><br><br><br>
+    <span style="cursor:wait">wait</span><br><br>
+    </div>
+    
+</body>
+</html>

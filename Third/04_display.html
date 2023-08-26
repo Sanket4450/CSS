@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+
+        /* Using Display property, we can change block element into inline element & inline element into block level element */
+
+        div {display: inline; background-color: darkgreen; color: white; font-size: 200%;}
+
+        span {display: block; background-color: darkred; color: white; font-size: 200%;}
+
+        /* Hiding an element can be done by setting the display property to none. (hides with space) */
+
+        .none {display: none;}
+
+        /* visibility: hidden; also hides an element. (hides without space) */
+
+        .hidden {visibility: hidden;}
+
+    </style>
+</head>
+<body>
+
+    <h2>➜ Block Level Element into Inline Element</h2>
+
+    <div>T</div><div>A</div><div>L</div><div>A</div><div>V</div><div>I</div><div>Y</div><div>A</div>
+    
+    <h2>➜ Inline Element into Block Level Element</h2>
+
+    <span>S</span><span>A</span><span>N</span><span>K</span><span>E</span><span>T</span>
+    <br>
+
+    <h2><em>➜ display: none;</em> doesn't take up any space </h2>
+
+    <hr style="border: 1px solid;">
+    <h1 class="none">Sanket Talaviya</h1>
+    <hr style="border: 1px solid;">
+
+    <h2><em>➜ visibility: hidden;</em>takes up space regarding to the element</h2>
+    
+    <hr style="border: 1px solid;">
+    <h1 class="hidden">Sanket Talaviya</h1>
+    <hr style="border: 1px solid;">
+
+</body>
+</html>

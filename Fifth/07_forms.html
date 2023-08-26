@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+
+        /* Use the width property to determine the width of the input field */
+
+        input {
+            width: 100%;
+        }
+
+        /* Use the padding property to add space inside the text field. */
+
+        input[type="text"] { /* there should not contain any space between input & square brackets */
+            padding: 30px 60px;
+            margin: 40px;
+            box-sizing: border-box;
+        }
+
+        /* Use the border property to change the border size and color, and use the border-radius property to add rounded corners */
+
+        input[type=text] {
+            border: 6px solid red;
+            border-radius: 10px;
+        }
+
+        /* If you only want a bottom border, use the border-bottom property */
+
+        /* Use the background-color property to add a background color to the input, and the color property to
+        change the text color */
+
+        input[type=text] {
+            background-color: #3CBC8D;
+            color: white;
+        }
+
+        /* By default, some browsers will add a blue outline around the input when it gets focus (clicked on).
+        You can remove this behavior by adding outline: none; to the input.
+
+        Use the :focus selector to do something with the input field when it gets focus */
+
+        input[type=text]:focus {
+            outline: none;
+            background-color: lightblue;
+            border: 6px solid black;
+        }
+
+        /* In this example we use the CSS transition property to animate the width of the search input when it gets focus. */
+
+        input[id="username"] {
+            width: 200px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: 1.4s ease-in-out;
+        }
+        input[id="username"]:focus {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 10px solid #ccc;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+        textarea:hover {
+            outline: 8px solid rgb(0, 128, 58);
+        }
+        textarea:focus {
+            background-color: rgb(255, 255, 196);
+        }
+
+        select {
+            width: 100%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #cecdff;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Username:">
+        <textarea>Some text...</textarea><br><br>
+        <select id="country" name="country">
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+            <option value="usa">USA</option>
+        </select>
+    </form>
+    
+</body>
+</html>

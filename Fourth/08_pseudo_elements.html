@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements</title>
+
+    <style>
+
+        /* A CSS pseudo-element is used to style specified parts of an element. */
+
+        /* ::first-line pseudo-element is used to add a special style to the first line of a text. */
+
+        p::first-line {
+            color: darkblue;
+            font-size: 125%;
+        }
+
+        /* ::first-letter pseudo-element is used to add a special style to the first letter of a text. */
+
+        p::first-letter {
+            color: darkred;
+            font-size: 400%;
+        }
+
+        /* Note: ::first-line & ::first-letter pseudo-elements can only be applied to block-level elements. */
+
+        /* Pseudo-elements can be combined with HTML classes */
+
+        p.one::first-letter {
+            color: aqua;
+            background-color: coral;
+            font-size: 500%;
+        }
+
+        /* Several pseudo-elements can also be combined. */
+
+        /* ::before pseudo-element can be used to insert some content before the content of an element. */
+
+        h1::before {
+            content: none;
+        }
+
+        /* ::after pseudo-element can be used to insert some content after the content of an element. */
+
+        h1::after {
+            content: none;
+        }
+
+        /* ::marker pseudo-element selects the markers of list items. */
+
+        ::marker {
+            color: green;
+            font-size: 250%;
+        }
+
+        /* ::selection pseudo-element matches the portion of an element that is selected by a user. */
+
+        ::selection {
+            color: gold;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+    'Content here, content here', making it look like readable English.</p>
+
+    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+    'lorem ipsum' will uncover many web sites still in their infancy.</p>
+
+    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
+    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+    English versions from the 1914 translation by H. Rackham.</p>
+
+    <p class="one">Taare Nai Pasand Mainu, Jatta Paye Kakra Banade</p>
+
+    <p class="one">He said one day you live this world behind, so live a life you will remember, my father told me when I was just a child, this are the night that never die, my father told me!</p>
+
+    <p>The first time in the United States in history, The official and the biggest recession is coming to ruin financial market.</p>
+
+    <p class="one">Is it to let now to say sorry! cause I'm missing more than just to your body, I'm to let to say sorry, Now!!!</p>
+
+    <h1>Sanket Talaviya</h1>
+    <h1>Harshil Ribadiya</h1>
+    <h1>Manav Amrutiya</h1>
+    <h1>Poojan Sapariya</h1>
+
+    <ul>
+        <li>Mobile</li>
+        <li>Laptop</li>
+        <li>computer</li>
+        <li>Tablet</li>
+        <li>Airpods</li>
+    </ul>
+
+    <ol>
+        <li>Canada</li>
+        <li>UK</li>
+        <li>Australia</li>
+        <li>Germany</li>
+    </ol>
+    
+</body>
+</html>

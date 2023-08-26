@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr Selectors</title>
+
+    <style>
+
+        /* [attribute] selector is used to select elements with a specified attribute. */
+
+        /* But it is only useful in forms. */
+
+        input[type="text"] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+        }
+
+        input[type="button"] {
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>CSS [attribute] Selector</h2>
+
+    <h2>Styling Fonts</h2>
+
+    <form name="input" action="" method="get">
+        Firstname:<input type="text" name="Name" value="Peter" size="20">
+        Lastname:<input type="text" name="Name" value="Griffin" size="20">
+        <input type="button" value="Example Button">
+    </form>
+    
+</body>
+</html>

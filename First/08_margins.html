@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins</title>
+
+    <style>
+
+        /* margin properties are used to create space around elements, outside of any defined borders. */
+
+        h1.full {border: 8px solid black; margin: 80px;}
+        h1.top {border: 8px solid darkred; margin-top: 80px;}
+        h1.right {border: 8px solid darkblue; margin-right: 100px;}
+        h1.bottom {border: 8px solid darkslateblue; margin-bottom: 80px;}
+        h1.left {border: 8px solid darkgreen; margin-left: 100px;}
+
+        /* Margin short hand property */
+
+        p {margin: 50px 220px 40px 60px; background-color: lightblue; border: 5px outset lightcoral; font-size: 30px;}
+
+        /* Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. */
+
+        .car1 {margin-bottom: 120px; background-color: yellow; border: 10px outset brown;}
+        .car2 {margin-top: 80px; color: white; background-color: red; border: 10px outset lightseagreen;}
+
+    </style>
+</head>
+<body>
+
+    <h2>➤ Margin Full</h2>
+    <h1 class="full">Avengers</h1>
+
+    <h2>➤ Margin Top</h2>
+    <h1 class="top">Robert Downey Jr.</h1>
+
+    <h2>➤ Margin Right</h2>
+    <h1 class="right">Chris Evans</h1>
+
+    <h2>➤ Margin Bottom</h2>
+    <h1 class="bottom">Chris Hemsworth</h1>
+
+    <h2>➤ Margin Left</h2>
+    <h1 class="left">Mark Raffalo</h1>
+
+    <p>Marvel Cinematic Universe</p>
+
+    <h1>Margin Collapse (Bottom = 120) & (Top = 80) = Total = 120(collapsed)</h1>
+
+    <h1 class="car1">Lamborghini</h1>
+    <h1 class="car2">Ferrari</h1>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+
+    <style>
+
+    /* If there are two or more CSS rules that point to the same element, the selector with the highest
+    specificity value will "win", and its style declaration will be applied to that HTML element. */
+
+    /* In this example, we have added a class selector (named "test"), and specified a green color
+    for this class. The text will now be green (even though we have specified a red color for
+    the element selector "p"). */
+
+    .test1 {color: green;}
+    h1 {color: red;}  /* This is because the class selector is given higher priority */
+
+    /* In this example, we have added the id selector (named "demo"). The text will now be blue. */
+
+    #demo1 {color: blue;}
+    .test2 {color: green;}
+    h2 {color: red;}  /* this is because the id selector is given higher priority
+
+    /* In this example, we have added an inline style for the "p" element. The text will now be pink. */
+
+    #demo2 {color: blue;}
+    .test3 {color: green;}
+    h3 {color: red;}  /* this is because the inline style is given the highest priority */
+
+    /* If the same rule is written twice into the external style sheet, then the latest rule wins */
+
+    h4 {background-color: yellow;}
+    h4 {background-color: aqua;}
+
+    </style>
+</head>
+<body>
+
+    <h1 class="test1">Hello World!</h1>
+
+    <h2 id="demo1" class="test2">Hello World!</h2>
+
+    <h3 id="demo2" class="test3" style="color: purple;">Hello World!</h3>
+
+    <h4>Hello World!</h4>
+    
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+
+    <style>
+
+        /* A website is often divided into headers, menus, content and a footer */
+
+        body {
+            margin: 0; /* used for fully attached content to the screen */
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* A header is usually located at the top of the website (or right below a top navigation menu).
+        It often contains a logo or the website name */
+
+        /* Style the header */
+        .header {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* A navigation bar contains a list of links to help visitors navigating through your website */
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* The layout in this section, often depends on the target users. The most common layout is one
+        (or combining them) of the following */
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+
+        <div class="column">
+            <h2>Column</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec
+                neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt
+                eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Column</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit
+                nec
+                neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo
+                tincidunt
+                eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Column</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit
+                nec
+                neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo
+                tincidunt
+                eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="row">
+    
+        <div class="column">
+            <h2>Column</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis
+                velit nec
+                neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo
+                tincidunt
+                eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            </p>
+        </div>
+    
+        <div class="column">
+            <h2>Column</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis
+                velit
+                nec
+                neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo
+                tincidunt
+                eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            </p>
+        </div>
+    
+        <div class="column">
+            <h2>Column</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis
+                velit
+                nec
+                neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo
+                tincidunt
+                eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+            </p>
+        </div>
+    
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+</html>

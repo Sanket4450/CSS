@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+
+    <style>
+
+        .dropbtn {
+            background-color: rgb(17, 143, 74);
+            color: white;
+            padding: 15px;
+            font-size: 120%;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .drop-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: rgb(241, 241, 241);
+            min-width: 200px;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+        }  /* If you want the dropdown menu to go from right to left, instead of left to right, add right: 0; */
+
+        .drop-content a {
+            display: block;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .drop-content {
+            display: block;
+        }
+
+        .dropbtn:hover {
+            background-color: rgb(14, 104, 55);
+        }
+
+        .drop-content a:hover {
+            background-color: rgb(210, 210, 210);
+        }
+
+        /* We can add image as well as dropdown content */
+
+        /* We can also add dropdown in a navigation bar as well */
+
+    </style>
+</head>
+<body>
+
+    <h2>Dropdown Menu</h2>
+
+    <div class="dropdown" style="float: left;">
+        <button class="dropbtn">Cricketers</button>
+        <div class="drop-content">
+            <a href="#">Rohit Sharma</a>
+            <a href="#">Virat Kohli</a>
+            <a href="#">M.S. Dhoni</a>
+            <a href="#">Hardik Pandya</a>
+
+            <!-- We use href="#" for test links -->
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><h2>Right-aligned Dropdown Content</h2>
+
+    <div class="dropdown" style="float: right;">
+        <button class="dropbtn">Cricketers</button>
+        <div class="drop-content">
+            <a href="#">Rohit Sharma</a>
+            <a href="#">Virat Kohli</a>
+            <a href="#">M.S. Dhoni</a>
+            <a href="#">Hardik Pandya</a>
+        </div>
+    </div>
+    
+</body>
+</html>

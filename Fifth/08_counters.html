@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+
+    <style>
+
+        /* CSS counters are like "variables". The variable values can be incremented by CSS rules */
+
+        /* To use a CSS counter, it must first be created with counter-reset. */
+
+        body {
+            counter-reset: section;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Using CSS Counters</h1>
+    
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>JavaScript Tutorial</h2>
+    <h2>Python Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+    
+</body>
+</html>

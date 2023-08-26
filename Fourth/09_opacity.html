@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+
+    <style>
+
+        /* opacity property specifies the opacity/transparency of an element. */
+
+        .group1 {
+            box-sizing: border-box;
+            float: left;
+            width: 20%;
+            border: 10px solid white;
+        }
+
+        .img1 {opacity: 1;}
+        .img2 {opacity: 0.8;}
+        .img3 {opacity: 0.6;}
+        .img4 {opacity: 0.4;}
+        .img5 {opacity: 0.2;}
+
+        /* opacity property is often used together with the :hover selector to change the opacity on mouse-over */
+
+        .group2 {
+            box-sizing: border-box;
+            float: left;
+            width: 25%;
+            border: 10px solid white;
+        }
+
+        .img6 {opacity: 0.3;}
+        .img7 {opacity: 0.4;}
+        .img8 {opacity: 0.6;}
+        .img9 {opacity: 0.8;}
+
+        .group2:hover {opacity: 1;}
+
+        /* In this case we want the image to NOT be transparent when the user hovers over it. The CSS for this is opacity:1;
+        When the mouse pointer moves away from the image, the image will be transparent again. */
+
+        .group3 {
+            box-sizing: border-box;
+            float: left;
+            width: 33.33%;
+            border: 10px solid white;
+        }
+
+        .img10 {opacity: 1;}
+        .img11 {opacity: 1;}
+        .img12 {opacity: 1;}
+
+        .group3:hover {opacity: 0.5;}
+
+    </style>
+</head>
+<body>
+
+    <img class="group1 img1" src="/HTML/Images/IMG_1.jpg" alt="Sanket Talaviya">
+    <img class="group1 img2" src="/HTML/Images/IMG_1.jpg" alt="Sanket Talaviya">
+    <img class="group1 img3" src="/HTML/Images/IMG_1.jpg" alt="Sanket Talaviya">
+    <img class="group1 img4" src="/HTML/Images/IMG_1.jpg" alt="Sanket Talaviya">
+    <img class="group1 img5" src="/HTML/Images/IMG_1.jpg" alt="Sanket Talaviya">
+
+    <img class="group2 img6" src="/HTML/Images/IMG_2.jpg" alt="Sanket Talaviya">
+    <img class="group2 img7" src="/HTML/Images/IMG_2.jpg" alt="Sanket Talaviya">
+    <img class="group2 img8" src="/HTML/Images/IMG_2.jpg" alt="Sanket Talaviya">
+    <img class="group2 img9" src="/HTML/Images/IMG_2.jpg" alt="Sanket Talaviya">
+
+    <img class="group3 img10" src="/HTML/Images/IMG_2.jpg" alt="Sanket Talaviya">
+    <img class="group3 img11" src="/HTML/Images/IMG_3.jpg" alt="Sanket Talaviya">
+    <img class="group3 img12" src="/HTML/Images/IMG_4.jpg" alt="Sanket Talaviya">
+    
+</body>
+</html>

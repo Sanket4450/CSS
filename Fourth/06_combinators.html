@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+
+    <style>
+
+        /* A combinator is something that explains the relationship between the selectors. */
+
+        /* The descendant selector matches all elements that are descendants of a specified element. */
+
+        .div1 p {background-color: yellow;} /* style p inside div */
+
+        /* The child selector selects all elements that are the children of a specified element. */
+
+        .div2 > p {background-color: salmon;}
+
+        /* The adjacent sibling selector is used to select an element that is directly after another specific element. */
+
+        .div3 + p {background-color: aqua;} /* only immediately following */
+
+        /* The general sibling selector selects all elements that are next siblings of a specified element. */
+
+        .div4 ~ p {background-color: pink;} /* not necessary immediately following */
+
+    </style>
+</head>
+<body>
+    
+    <h2>➜ Descendant Selector</h2>
+
+    <div class="div1">
+        <p>North Atlantic Treaty Organisation</p>
+        <p>United Nations Organisation</p>
+        <p>World Health organisation</p>
+        <h1><p>Indian Statistical Organisation</p></h1>
+    </div>
+    
+    <p>United States of America</p>
+    <p>United Arab Emirates</p>
+
+    <h2>➜ Child Selector</h2>
+
+    <div class="div2">
+        <p>Indina Premier League</p>
+        <p>Bangladesh Premier Leangue</p>
+        <section>
+            <!-- not child but descendant -->
+            <p>Pakistan Cricket Leangue</p>
+        </section>
+    </div>
+
+    <h2>➜ Adjacent Sibling Selector</h2>
+
+    <div class="div3">
+        <p>India</p>
+        <p>Pakistan</p>
+    </div>
+
+        <section>
+        <p>China</p>
+        <p>Japan</p>
+        </section>
+
+    <div class="div3">
+        <p>Russia</p>
+    </div>
+
+    <p>France</p>
+    <p>Spain</p>
+
+    <div class="div3"></div>
+
+    <span></span>
+    <p>Georgia</p>
+    <p>Switzerland</p>
+
+    <h2>➜ General Sibling Selector</h2>
+
+    <div class="div4">
+        <p>London</p>
+        <p>Tokyo</p>
+    </div>
+
+    <p>Paris</p>
+    <p>Jakarta</p>
+
+    <strong>
+        <p>Berlin</p>
+    </strong>
+
+    <div class="div4"></div>
+        <p>Moscow</p>
+
+    <span></span>
+    <p>Stockholm</p>
+
+</body>
+</html>
